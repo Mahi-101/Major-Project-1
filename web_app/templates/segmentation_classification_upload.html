@@ -1,0 +1,5 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Segment then classify</title><link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"></head>
+<body><main class="shell narrow-shell"><a class="back" href="{{ url_for('index') }}">&#8592; Home</a><header class="result-head"><p class="eyebrow">SEGMENT THEN CLASSIFY</p><h1>Crop first. Identify second.</h1><p>Locate each animal, classify the cropped region, and review the annotated result.</p></header>{% if error %}<div class="alert">{{ error }}</div>{% endif %}<form class="pipeline-form" action="{{ url_for('segment_then_classify') }}" method="post" enctype="multipart/form-data"><label class="file-label">Choose image<input type="file" name="file" accept="image/*" required></label><button type="submit">Run pipeline</button></form></main></body>
+</html>

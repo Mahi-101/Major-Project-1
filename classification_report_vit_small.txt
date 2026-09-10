@@ -1,0 +1,72 @@
+Test Accuracy (Top-1): 0.7885
+Test Accuracy (Top-3): 0.9220
+Test Accuracy (Top-5): 0.9569
+
+                          precision    recall  f1-score   support
+
+        buffalo_alambadi      0.961     0.942     0.951        52
+           buffalo_banni      0.774     0.774     0.774        31
+          buffalo_bargur      0.273     0.333     0.300        27
+       buffalo_bhadawari      0.886     0.886     0.886        35
+     buffalo_jaffarabadi      0.964     0.844     0.900        32
+         buffalo_mehsana      0.686     0.889     0.774        27
+          buffalo_murrah      0.712     0.725     0.718        51
+         buffalo_nagpuri      0.750     0.652     0.698        46
+       buffalo_nili_ravi      0.900     0.750     0.818        24
+           buffalo_surti      0.667     0.824     0.737        17
+            buffalo_toda      0.611     0.611     0.611        18
+       cattle_amritmahal      0.867     0.907     0.886        43
+         cattle_ayrshire      0.891     0.872     0.882        94
+          cattle_bachaur      0.667     0.444     0.533        18
+            cattle_badri      0.667     0.750     0.706        16
+           cattle_bargur      0.059     0.042     0.049        24
+           cattle_belahi      0.857     1.000     0.923        18
+      cattle_brown_swiss      0.845     0.817     0.831        60
+            cattle_dangi      0.870     0.952     0.909        21
+            cattle_deoni      0.860     0.925     0.892        40
+        cattle_gangatiri      0.308     0.211     0.250        19
+           cattle_gaolao      1.000     0.333     0.500        21
+        cattle_ghumusari      0.619     0.591     0.605        22
+              cattle_gir      0.906     0.895     0.901        86
+         cattle_guernsey      0.857     0.857     0.857        35
+         cattle_hallikar      0.826     0.594     0.691        32
+          cattle_hariana      0.595     0.893     0.714        28
+ cattle_himachali_pahari      0.846     0.478     0.611        23
+cattle_holstein-friesian      0.885     0.852     0.868        81
+           cattle_jersey      0.823     0.879     0.850        58
+         cattle_kangayam      0.815     0.917     0.863        24
+          cattle_kankrej      0.911     0.872     0.891        47
+          cattle_khariar      0.739     0.810     0.773        21
+          cattle_khillar      0.800     0.933     0.862        30
+    cattle_konkan_kapila      0.720     0.900     0.800        20
+           cattle_kosali      0.609     0.737     0.667        19
+   cattle_krishna_valley      0.789     0.811     0.800        37
+          cattle_ladakhi      0.750     0.789     0.769        19
+     cattle_malnad_gidda      0.871     0.964     0.915        28
+            cattle_malvi      0.429     0.375     0.400        24
+           cattle_mewati      0.756     0.944     0.840        36
+             cattle_motu      0.833     0.769     0.800        26
+           cattle_nagori      0.857     0.857     0.857        21
+             cattle_nari      0.750     0.577     0.652        26
+           cattle_nimari      1.000     0.818     0.900        22
+           cattle_ongole      0.763     0.849     0.804        53
+      cattle_poda_thurpu      0.844     1.000     0.915        27
+           cattle_ponwar      0.906     0.935     0.921        31
+        cattle_pulikulam      0.786     0.815     0.800        27
+         cattle_punganur      0.739     0.680     0.708        25
+           cattle_purnea      0.879     1.000     0.935        29
+            cattle_rathi      0.879     0.829     0.853        35
+         cattle_red_dane      0.809     0.826     0.817        46
+     cattle_red_kandhari      0.774     0.889     0.828        27
+       cattle_red_sindhi      0.871     0.675     0.761        40
+          cattle_sahiwal      0.731     0.817     0.772        60
+    cattle_shweta_kapila      0.457     0.471     0.464        34
+             cattle_siri      0.846     0.786     0.815        28
+       cattle_tharparkar      0.826     0.745     0.784        51
+           cattle_thutho      0.647     0.846     0.733        26
+       cattle_umblachery      0.933     0.824     0.875        17
+           cattle_vechur      0.933     0.800     0.862        35
+
+                accuracy                          0.789      2090
+               macro avg      0.769     0.764     0.759      2090
+            weighted avg      0.792     0.789     0.785      2090

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Livestock Vision</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <main class="shell">
+    <header class="hero">
+      <p class="eyebrow">LOCAL AI WORKBENCH</p>
+      <h1>Livestock Vision</h1>
+      <p>Identify breeds with three classifiers or trace animals with segmentation.</p>
+    </header>
+
+    {% if error %}<div class="alert">{{ error }}</div>{% endif %}
+
+    <section class="task-grid">
+      <article class="task-panel {% if selected_task == 'classification' %}active{% endif %}">
+        <div class="task-icon">01</div>
+        <h2>Classification</h2>
+        <p>Compare EfficientNet-B2, ViT-Small, and ConvNeXt-Tiny on one image.</p>
+        <form action="{{ url_for('classify') }}" method="post" enctype="multipart/form-data">
+          <label class="file-label">Choose image<input type="file" name="file" accept="image/*" required></label>
+          <button type="submit">Run classification</button>
+        </form>
+      </article>
+      <article class="task-panel {% if selected_task == 'segmentation' %}active{% endif %}">
+        <div class="task-icon">02</div>
+        <h2>Segmentation</h2>
+        <p>Annotate livestock in an image or video with YOLOv8-seg.</p>
+        <form action="{{ url_for('segment') }}" method="post" enctype="multipart/form-data">
+          <label class="file-label">Choose image or video<input type="file" name="file" accept="image/*,video/*" required></label>
+          <button type="submit">Run segmentation</button>
+        </form>
+      </article>
+    </section>
+  </main>
+  <a class="floating-pipeline-button" href="{{ url_for('segment_then_classify_page') }}">Segment then classify</a>
+</body>
+</html>
